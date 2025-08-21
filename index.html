@@ -3,12 +3,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirect to Google</title>
-    <script>
-        window.location.href = 'https://www.google.com';
-    </script>
+    <title>Open Google</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        a.button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: white;
+            background-color: #4285F4;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        a.button:hover {
+            background-color: #357ae8;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, https://www.google.com.</p>
+    <a href="https://www.google.com" target="_blank" class="button">
+</a>
 </body>
 </html>
